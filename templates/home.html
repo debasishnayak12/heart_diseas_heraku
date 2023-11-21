@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body bgcolor=#FFF80>
+    <center>
+        <h1>HEART DESIS PREDICTION </h1>
+        <br><br>
+        <form method="POST", action="{{url_for('get_prediction')}}">
+        <b> AGE :<input type="text" name="data1" placeholder="*Required Fileds"><br><br>
+            Gender: <select name="data2" id="data2" required="required">
+                    <option value="1">Female</option>
+                    <option value="0">Male</option>
+            </select>
+            CP :<select name="data3" id="data3" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select>
+            Trestbps :<input type="text" name="data4" placeholder="*Required Fileds"><br><br>
+            Chol :<input type="text" name="data5" placeholder="*Required Fileds"><br><br>
+            Fbs :<input type="text" name="data6" placeholder="*Required Fileds"><br><br>
+            Restecg :<select name="data7" id="data7" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select>
+            Thalach :<input type="text" name="data8" placeholder="*Required Fileds"><br><br>
+            Exang :<select name="data9" id="data9" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                </select>
+            Oldpeak :<input type="text" name="data10" placeholder="*Required Fileds"><br><br>
+            Slope :<select name="data11" id="data11" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select>
+            Ca :<select name="data12" id="data12" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                </select>
+            Thal :<select name="data13" id="data13" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select></b>
+                <br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </center>
+</body>
+</html>
